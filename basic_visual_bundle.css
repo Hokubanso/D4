@@ -51,7 +51,7 @@ body
     background-color:var(--white);
 }
 
-.menu-mobile
+.menu
 {
     display:flex;
     height:50px;
