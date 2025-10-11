@@ -50,3 +50,10 @@ body
 {
     background-color:var(--white);
 }
+
+.menu-mobile
+{
+    display:flex;
+    height:fit-content
+}
+
