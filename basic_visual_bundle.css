@@ -22,6 +22,24 @@
     src:url('Wattauchimma.ttf') format('truetype');
 }
 
+.arrow
+{
+    background-size:contain;
+    aspect-ratio:1/1;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.arrow-r
+{
+    background-image: url(Images/Icons/arrowR.png);
+}
+
+.arrow-l
+{
+    background-image: url(Images/Icons/arrowL.png);
+}
+
 body
 {
     -ms-user-select:none; 
@@ -76,16 +94,25 @@ body
     box-sizing:border-box;
 }
 
-.container
+.car-btn
 {
-    width:100%;
-    height:fit-content;
+    height:var(--size-btn);
+    border:none;
+    background-color:transparent;
+    cursor:pointer;
 }
 
-.font-c-dark
+.car-btn-panel
 {
-    color:var(--dark);
+    bottom:10%;
+    left:10%;
 }
+
+.container
+{width:100%;}
+
+.font-c-dark
+{color:var(--dark);}
 
 .font-c-white
 {color:var(--white)}
@@ -96,6 +123,27 @@ body
 .font-s-reg
 {font-size:var(--size-regular);}
 
+.img-contain
+{background-size:contain}
+
+.logo
+{
+    height:100%;
+}
+
+#logo
+{
+    top:5px;
+    height:50px;
+    left:5%;
+    transition:height 1s ease;
+}
+
+#logo:hover
+{
+    height:100px
+}
+
 .menu
 {
     display:flex;
@@ -104,6 +152,7 @@ body
     align-items:center;
     position:fixed;
     box-sizing:border-box;
+    z-index:100;
 }
 
 #main-menu
@@ -151,13 +200,16 @@ body
     position:absolute;
 }
 
+.pos-rel
+{
+    position:relative;
+}
+
 .tgl-button
 {
-    width:40px;
-    height:40px;
-    background:red;
+    width:45px;
     display:none;
-    top:10px;
+    top:15px;
     left:15%;
     cursor:pointer;
 }
@@ -205,3 +257,6 @@ body
 {
 
 }
+
+@media (prefers-color-scheme: dark)
+{}
