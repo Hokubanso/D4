@@ -214,7 +214,7 @@ body
     cursor:pointer;
 }
 
-@media screen and (max-width:640px)
+@media screen and ((max-width:640px) or (orientation:portrait))
 {
     #main-menu
     {
@@ -259,4 +259,5 @@ body
 }
 
 @media (prefers-color-scheme: dark)
+
 {}
