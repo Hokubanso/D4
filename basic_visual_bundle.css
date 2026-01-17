@@ -16,6 +16,11 @@
     --size-btn:40px
 }
 
+html
+{
+  scroll-behavior: smooth;
+}
+
 @font-face 
 {
     font-family:'D4_base';
@@ -38,6 +43,11 @@
 .arrow-l
 {
     background-image: url(Images/Icons/arrowL.png);
+}
+
+.basement
+{
+    z-index:101;
 }
 
 body
@@ -134,14 +144,14 @@ body
 #logo
 {
     top:5px;
-    height:50px;
-    left:5%;
+    height:var(--size-big);
+    left:7.5%;
     transition:height 1s ease;
 }
 
 #logo:hover
 {
-    height:100px
+    height:calc(var(--size-big) * 2)
 }
 
 .menu
@@ -171,7 +181,7 @@ body
 
 #main-menu .button:hover
 {
-    height:40px;
+    height:var(--size-btn);
     color:var(--dark)
 }
 
@@ -207,11 +217,36 @@ body
 
 .tgl-button
 {
-    width:45px;
+    width:calc(var(--size-big) - var(--size-ultra-sm));
     display:none;
-    top:15px;
-    left:15%;
+    top:calc(1.5 * var(--size-small));
+    left:17.5%;
     cursor:pointer;
+}
+
+.to-top
+{
+    height:calc(var(--size-big) * 2);
+    width:calc(var(--size-big) * 1.8);
+    display:flex;
+    flex-flow:column;
+    align-items:center;
+    justify-content:center;
+    top:0;
+    left:10%;
+    border-radius: 0 0 calc(var(--size-big) / 2) calc(var(--size-big) / 2);
+    text-decoration:none;
+}
+    
+.to-top:visited
+{
+    color:var(--dark);
+}
+
+.to-top:hover
+{
+    background-color:var(--primary-dark);
+    color:var(--white);
 }
 
 @media screen and ((max-width:640px) or (orientation:portrait))
@@ -247,17 +282,16 @@ body
         display:flex;
     }
 
+    #logo
+    {
+        left:5%;
+    }
+
     .tgl-button
     {
         display:block;
     }
 }
 
-@media screen and (min-width:640px)
-{
-
-}
-
 @media (prefers-color-scheme: dark)
-
 {}
