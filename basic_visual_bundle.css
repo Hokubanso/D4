@@ -224,6 +224,18 @@ body
     cursor:pointer;
 }
 
+.title
+{
+    padding-left:var(--size-regular);
+    font-size:var(--size-big);
+    width:500px;
+    height:20%;
+    display:flex;
+    align-items:center;
+    z-index:2;
+    background:linear-gradient(to right, var(--secondary-light), transparent);
+}
+
 .to-top
 {
     height:calc(var(--size-big) * 2);
@@ -295,5 +307,4 @@ body
 }
 
 @media (prefers-color-scheme: dark)
-
 {}

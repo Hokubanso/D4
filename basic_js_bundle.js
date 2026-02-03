@@ -1,3 +1,8 @@
+    import character1 from './Data/characters.json';
+
+    alert(character1.name);
+    
+    let lates = document.getElementsByClassName('title');
 
     let characters_pics = ["red","blue","green","orange"];
     
