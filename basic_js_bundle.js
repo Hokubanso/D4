@@ -1,4 +1,4 @@
-    import character1 from './Data/characters.json';
+    import character1 from './Data/characters.json' assert {type: 'json'};
 
     alert(character1.name);
     
@@ -57,4 +57,5 @@
         {actual_pic_chars = actual_pic}
         if (true_item == document.getElementById('carousel-pic-news'))
         {actual_pic_news = actual_pic}
+
     }
