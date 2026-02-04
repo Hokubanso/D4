@@ -1,4 +1,4 @@
-    import character1 from './Data/characters.json' assert {type:'json'};
+    import character1 from './Data/characters.json' with {type:'json'};
 
     alert(character1.name);
     
@@ -59,4 +59,5 @@
         {actual_pic_news = actual_pic}
 
     }
+
 
