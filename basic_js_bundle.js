@@ -1,6 +1,6 @@
-    import character1 from './Data/characters.json' with {type:'json'};
+    import characters from './Data/characters.json' with {type:'json'};
 
-    alert(character1.name);
+    alert(characters.char1.name);
     
     let lates = document.getElementsByClassName('title');
 
