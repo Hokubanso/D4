@@ -6,7 +6,7 @@
 
     for (let i = 0; i < (characters.length - 1); i++)
     {
-        characters_names.push(characters.length[i].name)
+        characters_names.push(characters[i].name)
     }
 
     console.log(characters_names)
