@@ -1,4 +1,7 @@
-    import {characters} from './Data/characters.json' with {type:'json'};
+    import characters from './Data/characters.json' with {type:'json'};
+
+    console.log(Array.isArray(characters)); // должно быть true
+    console.log(characters.length);
 
     let characters_names = [];
 
