@@ -6,10 +6,11 @@
 
     for (let i = 0; i < (characters.length - 1); i++)
     {
+        console.log(i)
         characters_names.push(characters[i].name)
     }
 
-    console.log(characters_names)
+    console.log(1)
 
     let characters_pics = ["red","blue","green","orange"];
     
