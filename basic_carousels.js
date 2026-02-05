@@ -8,8 +8,6 @@
         characters_names.push(characters[i].name)
     }
 
-    console.log(1)
-
     let characters_pics = ["red","blue","green","orange"];
     
     let news_pics = ["red","blue","green","orange"];
