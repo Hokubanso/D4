@@ -4,6 +4,11 @@
     
     let lates = document.getElementsByClassName('title');
 
+    for (let i = 0; i < 5; i++)
+    {
+        console.log(i);
+    }
+
     let characters_pics = ["red","blue","green","orange"];
     
     let news_pics = ["red","blue","green","orange"];
