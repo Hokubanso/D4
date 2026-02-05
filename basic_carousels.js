@@ -1,10 +1,8 @@
-    let lates = document.getElementsByClassName('title');
-
     import {characters} from './Data/characters.json' with {type:'json'};
 
     let characters_names = [];
 
-    for (let i = 0; i < (characters.length - 1); i++)
+    for (let i = 1; i < (characters.length); i++)
     {
         console.log(i)
         characters_names.push(characters[i].name)
