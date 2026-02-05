@@ -1,13 +1,15 @@
-    import characters from './Data/characters.json' with {type:'json'};
-
-    alert(characters.char1.name);
-    
     let lates = document.getElementsByClassName('title');
 
-    for (let i = 0; i < 5; i++)
+    import characters from './Data/characters.json' with {type:'json'};
+
+    let characters_names = [];
+
+    for (let i = 0; i < (characters.length - 1); i++)
     {
-        console.log(i);
+        characters_names.push(characters.length[i].name)
     }
+
+    console.log(characters_names)
 
     let characters_pics = ["red","blue","green","orange"];
     

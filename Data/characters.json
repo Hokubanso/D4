@@ -1,20 +1,25 @@
-{
-    "char1":
-    {
-        "name":"Анита Вольфрамова",
-        "story":"Я календарь переверну...",
-        "image":"zag1.jpg"
-    },
-    "char2":
-    {
-        "name":"Светлана сеченова",
-        "story":"Мама выкинула гомункула...",
-        "image":"zag1.jpg"
-    },
-    "char3":
-    {
-        "name":"Лель",
-        "story":"А не спеть ли мне песню...АААААА",
-        "image":"zag1.jpg"
-    }
+{ "characters":
+    [
+        {
+            "name":"Анита Вольфрамова",
+            "story":"Я календарь переверну...",
+            "image":"zag1.jpg",
+            "type":"physic",
+            "role":"pawn"
+        },
+        {
+            "name":"Светлана сеченова",
+            "story":"Мама выкинула гомункула...",
+            "image":"zag2.jpg",
+            "type":"chemical",
+            "role":"bishop"
+        },
+        {
+            "name":"Лель",
+            "story":"А не спеть ли мне песню...АААААА",
+            "image":"zag3.jpg",
+            "type":"physic",
+            "role":"pawn"
+        }
+    ]
 }
