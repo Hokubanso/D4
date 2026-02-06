@@ -1,8 +1,5 @@
     import characters from './Data/characters.json' with {type:'json'};
 
-    console.log(Array.isArray(characters));
-    console.log(characters.length);
-
     let characters_names = [];
     let characters_stories = [];
     let characters_pics = [];
@@ -16,7 +13,6 @@
         characters_pics.push(`url(Images/Characters/${characters[i].image})`)
         characters_types.push(characters[i].type)
         characters_roles.push(characters[i].role)
-        console.log(i)
     }
     
     let news_pics = ["red","blue","green","orange"];
