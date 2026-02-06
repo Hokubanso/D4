@@ -11,7 +11,7 @@
         characters_names.push(characters[i].name)
     }
 
-    console.log(characters_names)
+    console.log(characters_names);
 
     let characters_pics = ["red","blue","green","orange"];
     
