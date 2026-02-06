@@ -5,11 +5,13 @@
 
     let characters_names = [];
 
-    for (let i = 1; i < (characters.length); i++)
+    for (let i = 0; i < (characters.length); i++)
     {
         console.log(i)
         characters_names.push(characters[i].name)
     }
+
+    console.log(characters_names)
 
     let characters_pics = ["red","blue","green","orange"];
     
