@@ -7,8 +7,8 @@
 
     for (let i = 0; i < (characters.length); i++)
     {
-        console.log(i)
         characters_names.push(characters[i].name)
+        console.log(i)
     }
 
     console.log(characters_names);
