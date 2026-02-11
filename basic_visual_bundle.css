@@ -118,6 +118,13 @@ body
     left:10%;
 }
 
+#carousel-pic-char, #carousel-pic-char-shadow
+{
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+}
+
 .container
 {width:100%;}
 
