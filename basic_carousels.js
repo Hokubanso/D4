@@ -24,12 +24,13 @@
     let carousel_items = []
     let true_item
     let shadow_item
-    
+
     document.getElementById('carousel-pic-char').style.backgroundImage = characters_pics[actual_pic];
     document.getElementById('carousel-pic-news').style.background = news_pics[actual_pic];
 
     function car_is_chars()
     {
+        carousel_items = []
         carousel_items = characters_pics
         true_item = document.getElementById('carousel-pic-char')
         shadow_item = document.getElementById('carousel-pic-char-shadow')
@@ -38,6 +39,7 @@
 
     function car_is_news()
     {
+        carousel_items = []
         carousel_items = news_pics
         true_item = document.getElementById('carousel-pic-news')
         shadow_item = document.getElementById('carousel-pic-news-shadow')
