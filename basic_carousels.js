@@ -6,6 +6,8 @@
     let characters_types = [];
     let characters_roles = [];
 
+    let news_pics = ["red","blue","green","orange"];
+
     for (let i = 0; i < (characters.length); i++)
     {
         characters_names.push(characters[i].name)
@@ -15,7 +17,6 @@
         characters_roles.push(characters[i].role)
     }
     
-    let news_pics = ["red","blue","green","orange"];
     let actual_pic_chars = 0;
     let actual_pic_news = 0;
     let actual_pic = 0
@@ -68,4 +69,15 @@
 
     }
 
-
+    const btn_chars_forward = document.getElementById('chars_forward')
+    btn_chars_forward.addEventListener('click', car_is_chars)
+    btn_chars_forward.addEventListener('click', carousel_forward)
+    const btn_chars_backward = document.getElementById('chars_backward')
+    btn_chars_backward.addEventListener('click', car_is_chars)
+    btn_chars_backward.addEventListener('click', carousel_backward)
+    const btn_news_forward = document.getElementById('news_forward')
+    btn_news_forward.addEventListener('click', car_is_news)
+    btn_news_forward.addEventListener('click', carousel_forward)
+    const btn_news_backward = document.getElementById('news_backward')
+    btn_news_backward.addEventListener('click', car_is_news)
+    btn_news_backward.addEventListener('click', carousel_backward)
