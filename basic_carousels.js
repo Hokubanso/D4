@@ -3,8 +3,8 @@
     let characters_names = [];
     let characters_stories = [];
     let characters_pics = [];
-    let characters_type = [];
-    let characters_role = [];
+    let characters_types = [];
+    let characters_roles = [];
 
     for (let i = 0; i < (characters.length); i++)
     {
