@@ -1,12 +1,10 @@
     import characters from './Data/characters.json' with {type:'json'};
 
-    let characters_names = [];
-    let characters_stories = [];
-    let characters_pics = [];
-    let characters_types = [];
-    let characters_roles = [];
+    import news from './Data/news.json' with {type:'json'};
 
-    let news_pics = ["red","blue","green","orange"];
+    let characters_names = [], characters_stories = [], characters_pics = [], characters_types = [], characters_roles = []
+
+    let news_pics = [], news_titles = [];
 
     for (let i = 0; i < (characters.length); i++)
     {
@@ -15,6 +13,12 @@
         characters_pics.push(`url(Images/Characters/${characters[i].image})`)
         characters_types.push(characters[i].type)
         characters_roles.push(characters[i].role)
+    }
+
+    for (let i = 0; i < (news.length); i++)
+    {
+        news_pics.push(`url(Images/News/${news[i].image})`)
+        news_titles.push(news[i].title)
     }
     
     let actual_pic_chars = 0;
