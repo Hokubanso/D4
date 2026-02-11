@@ -22,7 +22,9 @@
     let actual_pic = 0
 
     let carousel_items = []
-
+    let true_item
+    let shadow_item
+    
     document.getElementById('carousel-pic-char').style.backgroundImage = characters_pics[actual_pic];
     document.getElementById('carousel-pic-news').style.background = news_pics[actual_pic];
 
