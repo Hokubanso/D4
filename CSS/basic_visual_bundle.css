@@ -156,7 +156,8 @@ body
 .container
 {width:100%;}
 
-.divider{height:var(--size-big)}
+.divider
+{height:var(--size-big)}
 
 .font-c-dark
 {color:var(--dark);}
