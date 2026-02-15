@@ -91,6 +91,16 @@ body
 .bg-secondary-light
 {background-color:var(--secondary-light);}
 
+.btn-about
+{
+    height:var(--size-btn);
+    border-radius:calc(var(--size-btn));
+    border:var(--dark) var(--size-ultra-sm) solid;
+    background:var(--white);
+    bottom:10%;
+    right:10%
+}
+
 .button
 {
     height:var(--size-btn);
