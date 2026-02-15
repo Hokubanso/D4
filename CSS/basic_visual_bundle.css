@@ -104,6 +104,7 @@ body
     box-shadow:0px 0px 0px var(--secondary);
     transition:background 0.5s ease, box-shadow 0.5s ease;
     text-decoration:none;
+    font-size:var(--size-regular);
 }
 
 .btn-about:hover
