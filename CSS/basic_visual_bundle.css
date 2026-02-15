@@ -105,7 +105,7 @@ body
 .btn-about:hover
 {
     background:var(--primary-light);
-    box-shadow:20px 0px 0px var(--secondary-light) ,10px 0px 0px var(--secondary);
+    box-shadow:10px 0px 0px var(--secondary), 20px 0px 0px var(--secondary-light);
     color:var(--secondary-light)
 }
 
