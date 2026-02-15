@@ -118,7 +118,7 @@ body
     left:10%;
 }
 
-#carousel-pic-char, #carousel-pic-char-shadow
+#carousel-pic-char, #carousel-pic-char-shadow, #carousel-pic-news, #carousel-pic-news-shadow
 {
     background-repeat:no-repeat;
     background-size:contain;
