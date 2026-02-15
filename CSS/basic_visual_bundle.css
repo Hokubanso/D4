@@ -30,6 +30,9 @@ html
 a
 {text-decoration:none;}
 
+.active
+{height:var(--size-btn)}
+
 .arrow
 {
     background-size:contain;
@@ -39,19 +42,13 @@ a
 }
 
 .arrow-r
-{
-    background-image: url(../Images/Icons/arrowR.png);
-}
+{background-image: url(../Images/Icons/arrowR.png);}
 
 .arrow-l
-{
-    background-image: url(../Images/Icons/arrowL.png);
-}
+{background-image: url(../Images/Icons/arrowL.png);}
 
 .basement
-{
-    z-index:101;
-}
+{z-index:101;}
 
 body
 {
@@ -113,9 +110,7 @@ body
 }
 
 .btn-about:visited
-{
-    color:var(--dark)
-}
+{color:var(--dark)}
 
 .button
 {
@@ -172,9 +167,7 @@ body
 {background-size:contain}
 
 .logo
-{
-    height:100%;
-}
+{height:100%;}
 
 #logo
 {
@@ -185,9 +178,7 @@ body
 }
 
 #logo:hover
-{
-    height:calc(var(--size-big) * 2)
-}
+{height:calc(var(--size-big) * 2)}
 
 .menu
 {
@@ -221,9 +212,7 @@ body
 }
 
 #menu-toggle
-{
-    display:none;
-}
+{display:none;}
 
 .pd-sm
 {padding:var(--size-small);}
@@ -241,14 +230,10 @@ body
 {padding-left:5%}
 
 .pos-abs
-{
-    position:absolute;
-}
+{position:absolute;}
 
 .pos-rel
-{
-    position:relative;
-}
+{position:relative;}
 
 .tgl-button
 {
@@ -315,30 +300,20 @@ body
         text-wrap:nowrap;
     }
 
-    #main-menu .button:hover
-    {
-        width:50%
-    }
+    #main-menu .button:hover, .active
+    {width:50%}
 
     #menu-toggle:checked + nav #main-menu
-    {
-        height:calc(var(--size-btn) * 4 + var(--size-regular) * 5);
-    }
+    {height:calc(var(--size-btn) * 4 + var(--size-regular) * 5);}
 
     #menu-toggle:checked + nav #main-menu .button
-    {
-        display:flex;
-    }
+    {display:flex;}
 
     #logo
-    {
-        left:5%;
-    }
+    {left:5%;}
 
     .tgl-button
-    {
-        display:block;
-    }
+    {display:block;}
 }
 
 @media (prefers-color-scheme: dark)
