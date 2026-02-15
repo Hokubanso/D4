@@ -37,12 +37,12 @@ html
 
 .arrow-r
 {
-    background-image: url(Images/Icons/arrowR.png);
+    background-image: url(../Images/Icons/arrowR.png);
 }
 
 .arrow-l
 {
-    background-image: url(Images/Icons/arrowL.png);
+    background-image: url(../Images/Icons/arrowL.png);
 }
 
 .basement
