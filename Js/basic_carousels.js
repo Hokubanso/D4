@@ -1,6 +1,6 @@
-    import characters from 'Json/characters.json' with {type:'json'};
+    import characters from '../Json/characters.json' with {type:'json'};
 
-    import news from 'Json/news.json' with {type:'json'};
+    import news from '../Json/news.json' with {type:'json'};
 
     let characters_names = [], characters_stories = [], characters_pics = [], characters_types = [], characters_roles = []
 
