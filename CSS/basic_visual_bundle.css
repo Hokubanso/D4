@@ -270,7 +270,13 @@ body
     border-radius: 0 0 calc(var(--size-big) / 2) calc(var(--size-big) / 2);
     text-decoration:none;
 }
-    
+
+.to-top:hover
+{
+    background-color:var(--primary-dark);
+    color:var(--white);
+}
+
 .to-top:visited
 {
     color:var(--dark);
