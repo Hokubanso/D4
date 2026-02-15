@@ -98,7 +98,8 @@ body
     border:var(--dark) var(--size-ultra-sm) solid;
     background:var(--white);
     bottom:10%;
-    right:10%
+    right:10%;
+    padding:0 5px 0 5px;
 }
 
 .button
