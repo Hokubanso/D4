@@ -257,6 +257,7 @@ body
     top:10%;
     background:var(--secondary-light);
     border-radius:var(--size-big);
+    padding:var(--size-small)
 }
 
 .tgl-button
