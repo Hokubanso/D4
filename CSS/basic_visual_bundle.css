@@ -229,11 +229,35 @@ body
 .pd-5-left
 {padding-left:5%}
 
+.play-video
+{
+    height:var(--size-big);
+    aspect-ratio:1;
+    border:var(--dark), solid, var(--size-ultra-sm);
+    border-radius:var(--size-big);
+}
+
+#play-video
+{display:none}
+
+#play-video:checked + .video{display:flex;}
+
 .pos-abs
 {position:absolute;}
 
 .pos-rel
 {position:relative;}
+
+.video
+{
+    display:none;
+    height:90%;
+    width:fit-content;
+    position:sticky;
+    top:10%;
+    background:var(--secondary-light);
+    border-radius:var(--size-big);
+}
 
 .tgl-button
 {
