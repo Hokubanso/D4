@@ -50,7 +50,7 @@
         pic_animation = news_animation
     }
 
-    function carousel_forward()
+    async function carousel_forward()
     {
         actual_pic = actual_pic + 1
         if (actual_pic == carousel_items.length)
@@ -69,7 +69,7 @@
         {actual_pic_news = actual_pic}
     }
 
-    function carousel_backward()
+    async function carousel_backward()
     {
         actual_pic = actual_pic - 1
         if (actual_pic < 0)
