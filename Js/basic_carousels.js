@@ -38,6 +38,7 @@
         true_item = document.getElementById('carousel-pic-char')
         shadow_item = document.getElementById('carousel-pic-char-shadow')
         actual_pic = actual_pic_chars
+        pic_animation() = char_animation()
     }
 
     function car_is_news()
@@ -46,18 +47,24 @@
         true_item = document.getElementById('carousel-pic-news')
         shadow_item = document.getElementById('carousel-pic-news-shadow')
         actual_pic = actual_pic_news
+        pic_animation() = car_animation()
     }
 
     function carousel_forward()
     {
         actual_pic = actual_pic + 1
         if (actual_pic == carousel_items.length)
-        {
-            actual_pic = 0
-        }
+        {actual_pic = 0}
+
+        pic_animation()
+
+        await delay(2000)
+
         true_item.style.backgroundImage = carousel_items[actual_pic]
+        
         if (true_item == document.getElementById('carousel-pic-char'))
         {actual_pic_chars = actual_pic}
+        
         if (true_item == document.getElementById('carousel-pic-news'))
         {actual_pic_news = actual_pic}
     }
@@ -66,12 +73,17 @@
     {
         actual_pic = actual_pic - 1
         if (actual_pic < 0)
-        {
-            actual_pic = carousel_items.length - 1
-        }
+        {actual_pic = carousel_items.length - 1}
+
+        pic_animation()
+
+        await delay(2000)
+
         true_item.style.backgroundImage = carousel_items[actual_pic]
+        
         if (true_item == document.getElementById('carousel-pic-char'))
         {actual_pic_chars = actual_pic}
+        
         if (true_item == document.getElementById('carousel-pic-news'))
         {actual_pic_news = actual_pic}
 
@@ -89,3 +101,7 @@
     const btn_news_backward = document.getElementById('news_backward')
         btn_news_backward.addEventListener('click', car_is_news)
         btn_news_backward.addEventListener('click', carousel_backward)
+
+    const delay = ms => new Promise(res => setTimeout(res, ms))
+    
+    true_item.animate()

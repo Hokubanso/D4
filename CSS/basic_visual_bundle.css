@@ -232,13 +232,13 @@ body
 .play-video
 {
     height:var(--size-big);
-    aspect-ratio:1;
+    aspect-ratio:1/1;
     border:var(--dark) solid var(--size-ultra-sm);
     border-radius:var(--size-big);
     background:var(--white)
 }
 
-#play-video
+#play-video-check
 {display:none}
 
 #play-video:checked + .video{display:flex;}
