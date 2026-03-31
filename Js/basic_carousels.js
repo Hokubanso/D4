@@ -38,7 +38,7 @@
         true_item = document.getElementById('carousel-pic-char')
         shadow_item = document.getElementById('carousel-pic-char-shadow')
         actual_pic = actual_pic_chars
-        pic_animation() = char_animation()
+        pic_animation = char_animation
     }
 
     function car_is_news()
@@ -47,7 +47,7 @@
         true_item = document.getElementById('carousel-pic-news')
         shadow_item = document.getElementById('carousel-pic-news-shadow')
         actual_pic = actual_pic_news
-        pic_animation() = news_animation()
+        pic_animation = news_animation
     }
 
     function carousel_forward()
