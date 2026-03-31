@@ -235,7 +235,8 @@ body
     aspect-ratio:1/1;
     border:var(--dark) solid var(--size-ultra-sm);
     border-radius:var(--size-big);
-    background:var(--white)
+    background:var(--white);
+    bottom:10%
 }
 
 #play-video-check
