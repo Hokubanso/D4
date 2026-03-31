@@ -47,7 +47,7 @@
         true_item = document.getElementById('carousel-pic-news')
         shadow_item = document.getElementById('carousel-pic-news-shadow')
         actual_pic = actual_pic_news
-        pic_animation() = car_animation()
+        pic_animation() = news_animation()
     }
 
     function carousel_forward()
@@ -104,4 +104,11 @@
 
     const delay = ms => new Promise(res => setTimeout(res, ms))
     
-    true_item.animate()
+    function char_animation()
+    {
+        true_item.animate(
+            
+        )
+    }
+    
+    

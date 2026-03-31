@@ -241,7 +241,7 @@ body
 #play-video-check
 {display:none}
 
-#play-video:checked + .video{display:flex;}
+#play-video:checked ~ .video{display:flex;}
 
 .pos-abs
 {position:absolute;}
