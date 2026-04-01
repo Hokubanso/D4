@@ -259,7 +259,8 @@ body
     left:10%;
     background:var(--secondary-light);
     border-radius:var(--size-big);
-    padding:var(--size-small)
+    padding:var(--size-small);
+    display:none
 }
 
 .tgl-button
