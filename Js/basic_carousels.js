@@ -32,13 +32,29 @@
     document.getElementById('carousel-pic-char').style.backgroundImage = characters_pics[actual_pic];
     document.getElementById('carousel-pic-news').style.background = news_pics[actual_pic];
 
+    const animation_param = {
+        duration: 1000,
+        iterations: 1,
+        direction: 'normal',
+        easing: 'ease-in-out'
+    }
+
+    let pic_animation = true_item.animate(p1,p2)
+
+    let same = false
+
+    let shadow_animation = shadow_item.animate(s1,s2)
+
     function car_is_chars()
     {
         carousel_items = characters_pics
         true_item = document.getElementById('carousel-pic-char')
         shadow_item = document.getElementById('carousel-pic-char-shadow')
         actual_pic = actual_pic_chars
-        pic_animation = char_animation
+        p1, s1 = char_animation
+        p2, s2 = animation_param
+        s2.direction = "reverse"
+        same = true
     }
 
     function car_is_news()
@@ -47,18 +63,25 @@
         true_item = document.getElementById('carousel-pic-news')
         shadow_item = document.getElementById('carousel-pic-news-shadow')
         actual_pic = actual_pic_news
-        pic_animation = news_animation
+        p1 = news_animation
+        s1 = news_animation_shadow
+        p2, s2 = animation_param
     }
 
     async function carousel_forward()
-    {
+    {   
         actual_pic = actual_pic + 1
         if (actual_pic == carousel_items.length)
         {actual_pic = 0}
 
-        pic_animation()
+        pic_animation.play()
+
+        shadow_item.style.backgroundImage = carousel_items[actual_pic]
+        shadow_item.style.display = 'block'
+        shadow_animation.play()
 
         await delay(2000)
+        shadow_item.style.display = 'none'
 
         true_item.style.backgroundImage = carousel_items[actual_pic]
         
@@ -71,11 +94,24 @@
 
     async function carousel_backward()
     {
+        if (not(same)){
+            p1 = news_animation_shadow
+            s1 = news_animation
+            s2.direction = "reverse"
+            p2.direction = "reverse"
+        }
+
         actual_pic = actual_pic - 1
         if (actual_pic < 0)
         {actual_pic = carousel_items.length - 1}
 
-        pic_animation()
+        pic_animation.play()
+
+        true_item.style.backgroundImage = carousel_items[actual_pic]
+        
+        shadow_item.style.display = 'block'
+        shadow_animation.play()
+        shadow_item.style.display = 'none'
 
         await delay(2000)
 
@@ -101,14 +137,20 @@
     const btn_news_backward = document.getElementById('news_backward')
         btn_news_backward.addEventListener('click', car_is_news)
         btn_news_backward.addEventListener('click', carousel_backward)
-
+    
     const delay = ms => new Promise(res => setTimeout(res, ms))
     
-    function char_animation()
-    {
-        true_item.animate(
-            
-        )
-    }
-    
-    
+    const char_animation = [
+        {left:"0%", filter:"opacity(1)"},
+        {left:"100%", filter:"opacity(0)"}
+    ]
+
+    const news_animation = [
+        {left:"0%"},
+        {left:"-100%"}
+    ]
+
+    const news_animation_shadow = [
+        {left:"100%"},
+        {left:"0%"}
+    ]
