@@ -39,11 +39,11 @@
         easing: 'ease-in-out'
     }
 
-    let pic_animation = true_item.animate(p1,p2)
+    let pic_animation
 
     let same = false
 
-    let shadow_animation = shadow_item.animate(s1,s2)
+    let shadow_animation
 
     function car_is_chars()
     {
@@ -51,6 +51,8 @@
         true_item = document.getElementById('carousel-pic-char')
         shadow_item = document.getElementById('carousel-pic-char-shadow')
         actual_pic = actual_pic_chars
+        pic_animation = true_item.animate(p1,p2)
+        shadow_animation = shadow_item.animate(s1,s2)
         p1, s1 = char_animation
         p2, s2 = animation_param
         s2.direction = "reverse"
@@ -63,6 +65,8 @@
         true_item = document.getElementById('carousel-pic-news')
         shadow_item = document.getElementById('carousel-pic-news-shadow')
         actual_pic = actual_pic_news
+        pic_animation = true_item.animate(p1,p2)
+        shadow_animation = shadow_item.animate(s1,s2)
         p1 = news_animation
         s1 = news_animation_shadow
         p2, s2 = animation_param
