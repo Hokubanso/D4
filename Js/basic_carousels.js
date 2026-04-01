@@ -100,7 +100,7 @@
 
     async function carousel_backward()
     {
-        if (not(same)){
+        if (!(same)){
             p1 = news_animation_shadow
             s1 = news_animation
             s2.direction = "reverse"
