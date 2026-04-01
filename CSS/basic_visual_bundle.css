@@ -232,7 +232,7 @@ body
 .play-video
 {
     height:var(--size-big);
-    aspect-ratio:1/1;
+    width:var(--size-big);
     border:var(--dark) solid var(--size-ultra-sm);
     border-radius:var(--size-big);
     background:var(--white);
