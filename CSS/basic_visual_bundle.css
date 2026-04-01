@@ -252,10 +252,11 @@ body
 
 .video
 {
-    height:500px;
-    width:500px;
+    height:90%;
+    width:90%;
     position:sticky;
     top:10%;
+    left:10%;
     background:var(--secondary-light);
     border-radius:var(--size-big);
     padding:var(--size-small)
