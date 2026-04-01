@@ -86,7 +86,7 @@
         shadow_item.style.display = 'block'
         shadow_animation.play()
 
-        await delay(2000)
+        await delay(1000)
         shadow_item.style.display = 'none'
 
         true_item.style.backgroundImage = carousel_items[actual_pic]
@@ -119,7 +119,7 @@
         shadow_animation.play()
         shadow_item.style.display = 'none'
 
-        await delay(2000)
+        await delay(1000)
 
         true_item.style.backgroundImage = carousel_items[actual_pic]
         
