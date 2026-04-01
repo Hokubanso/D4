@@ -254,7 +254,7 @@ body
 {
     height:90%;
     width:90%;
-    position:sticky;
+    position:fixed;
     top:10%;
     left:10%;
     background:var(--secondary-light);
