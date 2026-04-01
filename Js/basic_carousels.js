@@ -45,10 +45,8 @@
 
     let shadow_animation
 
-    let p1 
-    let p2
-    let s1 
-    let s2
+    let p1; let p2; let s1; let s2
+
     function car_is_chars()
     {
         carousel_items = characters_pics
