@@ -111,16 +111,15 @@
         if (actual_pic < 0)
         {actual_pic = carousel_items.length - 1}
 
-        pic_animation.play()
-
-        true_item.style.backgroundImage = carousel_items[actual_pic]
-        
+        shadow_item.style.backgroundImage = carousel_items[actual_pic]
         shadow_item.style.display = 'block'
-        shadow_animation.play()
-        shadow_item.style.display = 'none'
 
+        pic_animation.play()
+        shadow_animation.play()
+        
         await delay(1000)
 
+        shadow_item.style.display = 'none'
         true_item.style.backgroundImage = carousel_items[actual_pic]
         
         if (true_item == document.getElementById('carousel-pic-char'))
