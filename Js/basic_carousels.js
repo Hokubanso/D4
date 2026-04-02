@@ -55,9 +55,9 @@
         actual_pic = actual_pic_chars
         p1 = char_animation
         s1 = char_animation_shadow
-        p2 = s2 = animation_param
+        p2 = animation_param
         pic_animation = true_item.animate(p1,p2)
-        shadow_animation = shadow_item.animate(s1,s2)
+        shadow_animation = shadow_item.animate(s1,p2)
         same = true
     }
 
@@ -69,7 +69,7 @@
         actual_pic = actual_pic_news
         p1 = news_animation
         s1 = news_animation_shadow
-        p2 = s2 = animation_param
+        p2 = animation_param
         pic_animation = true_item.animate(p1,p2)
         shadow_animation = shadow_item.animate(s1,s2)
     }
