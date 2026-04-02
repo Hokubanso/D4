@@ -53,9 +53,9 @@
         true_item = document.getElementById('carousel-pic-char')
         shadow_item = document.getElementById('carousel-pic-char-shadow')
         actual_pic = actual_pic_chars
-        p1 = s1 = char_animation
+        p1 = char_animation
+        s1 = char_animation_shadow
         p2 = s2 = animation_param
-        s2.direction = "reverse"
         pic_animation = true_item.animate(p1,p2)
         shadow_animation = shadow_item.animate(s1,s2)
         same = true
@@ -149,6 +149,11 @@
     const char_animation = [
         {left:"0%", filter:"opacity(1)"},
         {left:"100%", filter:"opacity(0)"}
+    ]
+
+    const char_animation_shadow = [
+        {left:"100%", filter:"opacity(0)"},
+        {left:"0%", filter:"opacity(1)"}
     ]
 
     const news_animation = [
