@@ -80,10 +80,11 @@
         if (actual_pic == carousel_items.length)
         {actual_pic = 0}
 
-        pic_animation.play()
-
         shadow_item.style.backgroundImage = carousel_items[actual_pic]
         shadow_item.style.display = 'block'
+
+        pic_animation.play()
+
         shadow_animation.play()
 
         await delay(1000)
