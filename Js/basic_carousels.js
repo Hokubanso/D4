@@ -86,7 +86,7 @@
         pic_animation.play()
         shadow_animation.play()
 
-        await delay(1000)
+        await delay(995)
         
         shadow_item.style.display = 'none'
         true_item.style.backgroundImage = carousel_items[actual_pic]
