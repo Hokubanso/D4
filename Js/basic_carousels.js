@@ -32,12 +32,12 @@
     document.getElementById('carousel-pic-char').style.backgroundImage = characters_pics[actual_pic];
     document.getElementById('carousel-pic-news').style.background = news_pics[actual_pic];
 
-    const animation_param = Object.freeze({
+    const animation_param = {
         duration: 1000,
         iterations: 1,
         direction: 'normal',
         easing: 'ease-in-out'
-    })
+    }
 
     let pic_animation
 
