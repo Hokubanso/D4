@@ -146,6 +146,11 @@ body
     background-position:center;
 }
 
+#carousel-pic-char-shadow, #carousel-pic-news-shadow
+{
+    display:none;
+}
+
 .container
 {width:100%;}
 
